@@ -1,0 +1,106 @@
+html,
+p,
+h3,
+body,
+h1 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Indie Flower', cursive;
+}
+
+
+.title {
+    font-weight: 600;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    font-size: 70px;
+
+}
+
+.container {
+    background-image: radial-gradient(circle at 31.7% -18.3%, #ffea14 0, #fff000 6.25%, #fff400 12.5%, #fff700 18.75%, #e4f900 25%, #c4fa00 31.25%, #a0f900 37.5%, #73f700 43.75%, #23f40b 50%, #00f030 56.25%, #00ec49 62.5%, #00e860 68.75%, #00e477 75%, #00e18f 81.25%, #00dda8 87.5%, #00dac2 93.75%, #00d8dc 100%);
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin: auto;
+    justify-items: center;
+}
+
+.card {
+    background-color: rgb(20, 19, 19);
+    min-width: 225px;
+    height: 380px;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.img {
+    background-color: black;
+    width: 100%;
+    height: 50%;
+}
+
+.boton {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.boton button {
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    background-color: black;
+    color: rgb(237, 220, 34);
+    cursor: pointer;
+    font-family: 'Indie Flower', cursive;
+    font-size: 30px;
+}
+
+.spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border-left-color: rgb(245, 247, 249);
+    margin: auto;
+
+
+    animation: spin 0.7s cubic-bezier(0, 0.23, 0.49, 0.3) infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.hidden {
+    display: none;
+}
+        

@@ -1,0 +1,101 @@
+html,
+p,
+h3,
+body,
+h1 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cinzel', serif;
+}
+
+.title {
+    font-weight: 600;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+
+}
+
+.container {
+    background-image: radial-gradient(circle at 46.04% 4.77%, #f260e8 0, #d452ec 16.67%, #ad45f0 33.33%, #783cf2 50%, #0038f4 66.67%, #0039f6 83.33%, #003cf7 100%);
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin: auto;
+    justify-items: center;
+}
+
+.card {
+    background-color: rgb(20, 19, 19);
+    min-width: 225px;
+    height: 165px;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    color: white
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.img {
+    background-color: black;
+    width: 100%;
+    height: 50%;
+}
+
+.boton {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.boton button {
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    background-color: black;
+    color: rgb(97, 245, 104);
+    cursor: pointer;
+
+}
+
+.spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border-left-color: rgb(245, 247, 249);
+    margin: auto;
+
+
+    animation: spin 0.7s cubic-bezier(0, 0.23, 0.49, 0.3) infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.hidden {
+    display: none;
+}
